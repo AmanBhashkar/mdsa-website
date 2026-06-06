@@ -20,11 +20,7 @@ export const HERO = {
 export const STATS = {
   heading: 'Rooted in Growth, Driven by Results',
   body: 'Our track record speaks for itself. From grassroots farmer empowerment to enterprise-level supply chain optimization, we deliver measurable impact across every market we serve.',
-  items: [
-    // { value: '1,400+', label: 'Farmers Empowered' },
-    // { value: '500+', label: 'Supply Chain Partners' },
-    // { value: '20+', label: 'Countries Served' },
-  ],
+  items: [] as { value: string; label: string }[],
 }
 
 export const SERVICES = {
