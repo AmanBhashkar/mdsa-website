@@ -1,0 +1,118 @@
+:root {
+  --c-primary: #1b4332;
+  --c-primary-dark: #0d2b1e;
+  --c-primary-mid: #2d6a4f;
+  --c-accent: #52b788;
+  --c-text: #111827;
+  --c-text-muted: #6b7280;
+  --c-bg: #ffffff;
+  --c-bg-alt: #f4f6f1;
+  --c-border: #e5e7eb;
+
+  --container-max: 1200px;
+  --container-px: clamp(16px, 5vw, 80px);
+  --section-py: clamp(48px, 8vw, 96px);
+
+  font: 16px/1.6 system-ui, 'Segoe UI', Roboto, sans-serif;
+  color: var(--c-text);
+  background: var(--c-bg);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+#root {
+  min-height: 100svh;
+  display: flex;
+  flex-direction: column;
+}
+
+h1, h2, h3, h4 {
+  font-weight: 600;
+  line-height: 1.2;
+  color: var(--c-text);
+  margin: 0;
+}
+
+p {
+  margin: 0;
+  color: var(--c-text-muted);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+img, svg {
+  display: block;
+  max-width: 100%;
+}
+
+.container {
+  max-width: var(--container-max);
+  margin: 0 auto;
+  padding: 0 var(--container-px);
+  width: 100%;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 12px 28px;
+  border-radius: 6px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  border: 2px solid transparent;
+  transition: background 0.2s, border-color 0.2s, color 0.2s, box-shadow 0.2s;
+  white-space: nowrap;
+}
+
+.btn--primary {
+  background: var(--c-primary);
+  color: #fff;
+}
+
+.btn--primary:hover {
+  background: var(--c-primary-mid);
+}
+
+.btn--outline-white {
+  background: transparent;
+  color: #fff;
+  border-color: rgba(255, 255, 255, 0.7);
+}
+
+.btn--outline-white:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: #fff;
+}
+
+.btn--accent {
+  background: var(--c-accent);
+  color: #fff;
+}
+
+.btn--accent:hover {
+  background: #3da876;
+  box-shadow: 0 4px 12px rgba(82, 183, 136, 0.35);
+}

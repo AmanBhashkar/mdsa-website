@@ -1,0 +1,41 @@
+.hero {
+  background-color: var(--c-primary-dark);
+  background-image:
+    linear-gradient(rgba(5, 25, 12, 0.78), rgba(8, 30, 16, 0.72)),
+    url('/hero-bg.jpg'); /* Drop your farm photo here */
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  padding: clamp(72px, 12vw, 140px) 0 clamp(56px, 10vw, 120px);
+}
+
+.hero__inner {
+  display: flex;
+  align-items: center;
+}
+
+.hero__content {
+  max-width: 620px;
+}
+
+.hero__headline {
+  font-size: clamp(32px, 5vw, 52px);
+  font-weight: 700;
+  line-height: 1.15;
+  letter-spacing: -1px;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.hero__body {
+  font-size: clamp(15px, 2vw, 17px);
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.78);
+  margin-bottom: 36px;
+}
+
+.hero__actions {
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+}
