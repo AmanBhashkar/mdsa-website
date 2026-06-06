@@ -61,12 +61,12 @@ export const WHY_CHOOSE_US = {
 
 export const CTA_SECTION = {
   heading: 'Ready to transform the agricultural landscape?',
-  body: 'Partner with MDSA AgroSage to unlock new markets, streamline your supply chain, and grow sustainably.',
+  body: 'Partner with MDSA UrVillage to unlock new markets, streamline your supply chain, and grow sustainably.',
   button: { label: 'Get Started Today', href: '#contact' },
 }
 
 export const FOOTER = {
-  brand: { short: 'MDSA', long: 'AgroSage' },
+  brand: { short: 'MDSA', long: 'UrVillage' },
   tagline: 'Empowering Agriculture, Optimizing Supply Chains.',
   columns: [
     {
@@ -95,5 +95,5 @@ export const FOOTER = {
       ],
     },
   ],
-  copyright: '© 2026 MDSA AgroSage. All rights reserved.',
+  copyright: '© 2026 MDSA UrVillage. All rights reserved.',
 }
